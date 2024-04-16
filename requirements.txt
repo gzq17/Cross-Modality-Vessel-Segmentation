@@ -1,0 +1,5 @@
+SimpleITK
+scikit-image
+scipy
+tqdm
+open3d
