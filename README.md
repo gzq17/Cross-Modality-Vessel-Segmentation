@@ -64,7 +64,7 @@ root_path/data2/
 	python train_seg.py --task 'MRA2CTA-source' --test_txt_path 'data2/data_txt/train.txt' --test_over  #over segmentation
     ```
 
-### Pseudo Label Generation
+### Step II: Pseudo Label Generation
 * **ICP-based**. 
     ```shell
     python data_process/icp_based_gene.py
@@ -76,7 +76,7 @@ root_path/data2/
 	python data_process/reg_pseudo_gene.py
     ```
 
-### Target Network
+### Step III: Target Network
 * **ICP-based**. 
     ```shell
     python train_seg.py --train --task 'MRA2CTA-target'  --label_path 'model/MRA2CTA/icp_generate_label/' #training
