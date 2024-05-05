@@ -2,13 +2,13 @@
 
 This repository contains the official implementation of our paper:
 
-> **[Cross-Modality Cerebrovscular Segmentation Based on Pseudo-Label Generation via Paired Data]**
+> **[Cross-Modality Cerebrovscular Segmentation Based on Pseudo-Label Generation via Paired Data, Computerized Medical Imaging and Graphics](https://www.sciencedirect.com/science/article/pii/S0895611124000703)**
 > 
 > Zhanqiang Guo, [Jianjiang Feng](http://ivg.au.tsinghua.edu.cn/~jfeng/), Wangsheng Lu, Yin Yin,  Guangming Yang, Jie Zhou
 
-> Paper: 
+> Paper: [CMIG2024](https://www.sciencedirect.com/science/article/pii/S0895611124000703)
 
-> **Abstract:** Accurate segmentation of cerebrovascular structures from Computed Tomography Angiography (CTA), Magnetic Resonance Angiography (MRA), and Digital Subtraction Angiography (DSA) is crucial for clinical diagnosis of cranial vascular diseases. Recent advancements in deep Convolution Neural Network (CNN) have significantly improved the segmentation process. However, training segmentation networks for all modalities requires significant data labeling for each modality, which is often expensive and time-consuming. To circumvent this limitation, we introduce an approach to train cross-modality cerebrovascular segmentation networks based on paired data from source and target domains. Our approach involves training a universal vessel segmentation network using source domain training data with manual labels, which automatically produces initial labels of target domain training images. We improve the initial labels of target domain training images by fusing paired images, which are then used to refine the target domain segmentation network. And a series of experimental arrangements is present for assessing the efficacy of our method in various practical application scenarios. The experiments conducted on an MRA-CTA dataset and a DSA-CTA dataset demonstrate that the proposed method is effective for cross-modality cerebrovascular segmentation and achieves state-of-the-art performance.
+> **Abstract:** Accurate segmentation of cerebrovascular structures from Computed Tomography Angiography (CTA), Magnetic Resonance Angiography (MRA), and Digital Subtraction Angiography (DSA) is crucial for clinical diagnosis of cranial vascular diseases. Recent advancements in deep Convolution Neural Network (CNN) have significantly improved the segmentation process. However, training segmentation networks for all modalities requires extensive data labeling for each modality, which is often expensive and time-consuming. To circumvent this limitation, we introduce an approach to train cross-modality cerebrovascular segmentation network based on paired data from source and target domains. Our approach involves training a universal vessel segmentation network with manually labeled source domain data, which automatically produces initial labels for target domain training images. We improve the initial labels of target domain training images by fusing paired images, which are then used to refine the target domain segmentation network. A series of experimental arrangements is presented to assess the efficacy of our method in various practical application scenarios. The experiments conducted on an MRA-CTA dataset and a DSA-CTA dataset demonstrate that the proposed method is effective for cross-modality cerebrovascular segmentation and achieves state-of-the-art performance.
 <br>
 <p align="center">
     <img src="./imgs/framework.png"/ width=60%> <br />
@@ -91,7 +91,14 @@ root_path/data2/
 ## Citation
 We hope you find our work useful. If you would like to acknowledge it in your project, please use the following citation:
 ```
-TODO
+@article{guo2024cross,
+  title={Cross-modality cerebrovascular segmentation based on pseudo-label generation via paired data},
+  author={Guo, Zhanqiang and Feng, Jianjiang and Lu, Wangsheng and Yin, Yin and Yang, Guangming and Zhou, Jie},
+  journal={Computerized Medical Imaging and Graphics},
+  pages={102393},
+  year={2024},
+  publisher={Elsevier}
+}
 ```
 
 ## Contact me
